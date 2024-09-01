@@ -1,0 +1,45 @@
+\documentclass{beamer}
+
+% \usepackage{beamerthemesplit} // Activate for custom appearance
+
+%\title{Linear Equations Without Division}
+%\author{David Eisenbud\\
+%Mathematics}
+%
+%\date{\today}
+\begin{document}
+\frame{Who am I?
+\begin{itemize}
+\item David Eisenbud (Mathematics), PhD University of Chicago 1970
+\item Brandeis 1970-1997,  Berkeley since 1997. Meanwhile:
+\item Mathematical Sciences Research Institute: Director 1997--2007 and
+2013--22
+\item Simons Foundation: Director of Math/Physical Science 2010--12 , now Trustee 
+\item My project: ``Infinite Free Resolutions'': linear equations with linearly dependent solutions
+\end{itemize}}
+
+\frame{
+\centerline{$ax +by = 0\quad  \Longrightarrow\quad  y= ax/b.$
+\ {\it What if you can't divide?}}
+\medbreak
+$\bullet$ Algebraic geometry studies a space X by the functions on it. 
+If $b$ is a function that takes value 0 somewhere, division is impossible. 
+\medbreak
+
+$\bullet$ Example:
+\begin{itemize}
+\item  $ X =\{(0,0), (1,0),(0,1)\},$ 3 points.
+\medbreak
+If $a,b$ are the coordinate functions, then
+$ab =a(a-1)=b(b-1) = 0$.
+\medbreak
+\item The solutions of $ax+by=0$ are the 4 columns of:
+$\begin{pmatrix}b&a-1&0&0\\0&0&a&b-1 \end{pmatrix}$: 
+\medbreak
+These are dependent, with 8 linear relations. 
+Repeating this, we get exponential growth.
+\end{itemize} 
+\medbreak
+What's the structure?
+}
+\end{document}
