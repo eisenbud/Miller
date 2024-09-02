@@ -1,5 +1,7 @@
 \documentclass{beamer}
-
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{pdflscape}
 % \usepackage{beamerthemesplit} // Activate for custom appearance
 
 %\title{Linear Equations Without Division}
@@ -8,22 +10,39 @@
 %
 %\date{\today}
 \begin{document}
-\frame{Who am I?
-\begin{itemize}
-\item David Eisenbud (Mathematics), PhD University of Chicago 1970
-\item Brandeis 1970-1997,  Berkeley since 1997. Meanwhile:
-\item Mathematical Sciences Research Institute: Director 1997--2007 and
-2013--22
-\item Simons Foundation: Director of Math/Physical Science 2010--12 , now Trustee 
-\item My project: ``Infinite Free Resolutions'': linear equations with linearly dependent solutions
-\end{itemize}}
+
+\frame{ \centerline{David Eisenbud}
+\smallbreak
+\centerline{
+\includegraphics[width=.8\textwidth]{"David with dodecahedron balloons.JPG"}
+}
+%\includegraphics[width=\textwidth]{"David-upsidedown.jpeg"}
+%\end{rotate}
+%}
+%\includegraphics[width=\textwidth]{"David-upsidedown.jpeg"}
+
+My project: find \emph{finite} geometric invariants from some \emph{infinite} algebraic structures
+that come from the geometry.
+}
+
+%\frame{David Eisenbud
+%\begin{itemize}
+%\item David Eisenbud (Mathematics), PhD University of Chicago 1970
+%\item Brandeis 1970-1997,  Berkeley since 1997. Meanwhile:
+%\item Mathematical Sciences Research Institute: Director 1997--2007 and
+%2013--22
+%\item Simons Foundation: Director of Math/Physical Science 2010--12 , now Trustee 
+%\item My project: ``Infinite Free Resolutions'': linear equations with linearly dependent solutions
+%\end{itemize}}
 
 \frame{
-\centerline{$ax +by = 0\quad  \Longrightarrow\quad  y= ax/b.$
-\ {\it What if you can't divide?}}
+$\bullet$ The geometry of a space $X$ is reflected in the functions on it and the linear
+equations they satisfy. If $b$ is a nonzero number then
+
+\centerline{$ax +by = 0\quad  \Longrightarrow\quad  y= ax/b,$}
+
 \medbreak
-$\bullet$ Algebraic geometry studies a space X by the functions on it. 
-If $b$ is a function that takes value 0 somewhere, division is impossible. 
+but if $b$ is a function that takes value 0 somewhere, division is impossible. What then?
 \medbreak
 
 $\bullet$ Example:
@@ -40,6 +59,6 @@ These are dependent, with 8 linear relations.
 Repeating this, we get exponential growth.
 \end{itemize} 
 \medbreak
-What's the structure?
+Is there a finite description of such infinite structures?
 }
 \end{document}
