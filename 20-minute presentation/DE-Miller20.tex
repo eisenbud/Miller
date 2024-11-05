@@ -82,10 +82,10 @@ The Weierstrass points are landmarks that rigidify on $X$.
  \end{frame}
 
 
-\begin{frame}{The pole orders form a \alert{semigroup} in the whole numbers.}
+\begin{frame}{Numerical semigroups.}
  
- A \alert{semigroup} (more precisely, ``reduced numerical semigroup'' is a subset 
- containing 0 and all but finitely many positive integers and closed under addition. For
+ A \alert{semigroup} (more precisely `` numerical semigroup'') is a set of  non-negative integers, 
+  \alert{closed under addition}, \alert{containing 0}. and containing all large integers.  For
  example 
  $
 \{0,2, 4, 6, 7, 8,\dots\}.
@@ -94,38 +94,24 @@ or
 $
  \{0,g+1,g+2,\dots\},
  $
-(where the 3 dots represent ``all larger numbers''.
+where the 3 dots represent ``all larger numbers''.
 \bigskip
-
-Since
-$$
-\frac{1}{(z-p)^d}\frac{1}{(z-p)^e} = \frac{1}{(z-p)^{d+e}}
-$$
-the list $W(p)$ is  a semigroup,
-called the \alert{Weierstrass semigroup} of $p$.
-
 \end{frame}
-\begin{frame}{The set of pole orders}
-A function on a Riemann surface with a pole of order $d$ at $x = 0\in X$ is locally of the form
+
+
+\begin{frame}{The set of pole orders is a numerical semigroup}
+A function on a Riemann surface with a pole of order $d$ at $p\in X$ is locally of the form
 $
-\frac{1}{x^d} .
+\frac{1}{(x-p)^d} .
 $
 Since 
 $$
-\frac{1}{x^d} \frac{1}{x^e} = \frac{1}{x^{d + e}}, 
+\frac{1}{(z-p)^d}\frac{1}{(z-p)^e} = \frac{1}{(z-p)^{d+e}}
 $$
- the set of pole orders $W(0)$ is \alert{closed under addition}.  Since the constant function has pole order 0 at every point, $W(0)$ contains 0.Th are the conditions that define a \alert{numerical semigroup}; that is the set of pole orders of  at $p\in X$ of functions $W(p)$, such as:
- $
-\{0,g+1,g+2,\dots\},
- $
- or
-$
-\{0,2, 4,\dots, 2g, 2g+1,2g+2,\dots\}.
- $
-\bigskip
-
- As in these cases, the Riemann-Roch theorem implies that every number $\geq 2g$ is a pole order.
-
+ the set of pole orders $W(p)$ is \alert{closed under addition}.  Since the constant function has pole order 0 at every point, $W(p)$ \alert{contains 0}. The Riemann-Roch theorem implies that, if the genus of $X$ is $g$, then
+  \alert{every number $\geq 2g$ is in $W(p)$}.
+ \medskip
+ In other words, $W(p)$, the set of pole orders of functions on $X$ that have poles only at $p$, is a \alert{numerical semigroup}.
  
 \end{frame}
 
