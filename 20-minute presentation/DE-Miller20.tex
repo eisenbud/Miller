@@ -80,20 +80,32 @@ there is a different list $W(p)$ of pole orders.
 The Weierstrass points are landmarks that rigidify on $X$.
 \end{columns}
  \end{frame}
-\begin{frame}{The pole orders form a \alert{semigroup} in the whole numbers.}
- 
- A semigroup is....
 
-Since
-$$
-\frac{1}{(z-p)^d}\frac{1}{(z-p)^e} = \frac{1}{(z-p)^{d+e}}
-$$
-the list $W(p)$ is closed under addition, a \alert{semigroup},
-called the \alert{Weierstrass semigroup} of $p$.
 
+\begin{frame}{The set of pole orders}
+A function on a Riemann surface with a pole of order $d$ at $x = 0\in X$ is locally of the form
+$
+\frac{1}{x^d} .
+$
+Since 
+$$
+\frac{1}{x^d} \frac{1}{x^e} = \frac{1}{x^{d + e}}, 
+$$
+ the set of pole orders $W(0)$ is \alert{closed under addition}.  Since the constant function has pole order 0 at every point, $W(0)$ contains 0.Th are the conditions that define a \alert{numerical semigroup}; that is the set of pole orders of  at $p\in X$ of functions $W(p)$, such as:
+ $
+\{0,g+1,g+2,\dots\},
+ $
+ or
+$
+\{0,2, 4,\dots, 2g, 2g+1,2g+2,\dots\}.
+ $
+\bigskip
+
+ As in these cases, the Riemann-Roch theorem implies that every number $\geq 2g$ is a pole order.
 
  
 \end{frame}
+
  \begin{frame}{A long-running conversation}
  
 \begin{columns}
@@ -110,11 +122,11 @@ called the \alert{Weierstrass semigroup} of $p$.
  \smallskip
  
 (1860) If $p$ is a point on a Riemann surface of genus $g$,
- then $W(p)$ is missing precisely $g$ numbers; for example
+ then $W(p)$ is missing precisely $g$ numbers, like
  $
 \{0,g+1,g+2,\dots\},
  $
- or
+ and
 $
 \{0,2, 4,\dots, 2g, 2g+1,\dots\}.
  $
@@ -136,6 +148,7 @@ on a Riemann surface?
 \end{columns}
 
 \end{frame}
+
 
 \begin{frame}{Answers?}
  
@@ -164,21 +177,25 @@ $h^0(\omega_X) = 16$ and $h^0(\omega_X\otimes \omega_X) = 45$; but $\#(G+G) = 46
 Here is an example of a general method:
 
 \begin{example}[Pinkham, 1974]
-Let $X$ be the plane curve with equation $y^3-(x^4 -u) = 0.$
+Let $X$ be the plane curve with equation $x^3-(y^4 -u) = 0.$
 \begin{figure}
  
 \end{figure} 
 
-When $u\neq 0$ this is a Riemann surface, but as $u$ goes to 0 it becomes the curve 
-defined by the equation $y^3-x^4$, which has a cusp singularity at 0.
+When $u\neq 0$ varies, this defines a family of Riemann surfaces
+$X_u$ but as $u$ goes to 0 it becomes the singular curve 
+defined by the equation $x^3-y^4$, which has a cusp at 0. 
+
 \begin{figure}
  
 \end{figure}
-Let $a_{1}\dots a_{4}$ be the 4 fourth roots of $u$.
-Pinkham showed that, for small $u$, the
-4 points with coordinates $y=0, x=a_{i}$ are Weierstrass points with 
-semigroup $\{3,4,6,7,8,\dots\}$.
-\alert{Show the fractions}.
+It is parameterized
+by $x=t^4, y=t^3$. The line $x=0$ meets the curve with multiplicity 4, the line $y=0$ meets the curve with
+multiplicity 3.
+\medskip
+Now suppose $u\neq 0$, and let $a$ be a fourth root of $u$. 
+The point $p$ with $x=0, y= a$ is in $X_u$, and at this point the functions $1/y$ has a pole of order 3, while $1/x$ has
+a pole of order 4, so this is a Weierstrass point with the Weierstrass semigroup $W(p) = {3,4,6,7,8,\dots}.$
 \end{example}
 \end{frame}
 
@@ -232,18 +249,24 @@ Did you notice that there were no women in the story thus far? That has changed:
 \bigskip
 \begin{columns}
 \column{.4\textwidth}
- \alert{Hannah Larson} (Thesis 2023; now Assistant Professor at Berkeley) asks and answers a refined version of Hurwitz's question (catch phrase: Brill-Noether theory over the Hurwitz space). 
+
+
+
+ \alert{Hannah Larson} (Thesis 2023; now Assistant Professor at Berkeley) asks and answers a refined version of Hurwitz's question (catch phrase: Brill-Noether theory over the Hurwitz space).
  \bigskip
  
 We share a student, \alert{Feiyang Lin} who is working on a still more refined question.
 
 \column{.4\textwidth}
+
+\vskip-.1in
+
 \begin{figure}
     %\flushleft
     \includegraphics[width=.4\textwidth]{"HannahLarson.jpg"}
 \end{figure}
 
-\vskip -.3in
+\vskip -.2in
 \begin{figure}
     %\flushleft
     \includegraphics[width=.5\textwidth]{"FeiyangLin.jpg"}
