@@ -30,7 +30,7 @@ Before Riemann, ``curves" were things in the plane, defined by one equation in 2
  \end{frame}
 
 \begin{frame}{Compact Riemann Surfaces}
-The Riemann surfaces of genus $g$ look like donuts with $g$ holes; for example:
+The Riemann surfaces of \alert{genus $g$} look like donuts with $g$ holes; for example:
 \begin{columns}
  \column{.5\textwidth}
 \vskip -.4in
@@ -53,7 +53,7 @@ Genus 3:
     %\caption{}
 \end{figure}
 Riemann: there is a 6 = 3g-3 dimensional family of different complex structures. 
-\bigskip
+\medskip
 
 How can you tell one from another??
 \end{columns}
@@ -66,7 +66,7 @@ How can you tell one from another??
  The only differentiable functions
  everywhere defined on a Riemann surface $X$ are the constants;
  but there are functions that are defined except
- at a point $p\in X$, where there is a pole 
+ at a \alert{single point} $p\in X$, where there is a pole 
  $$
  z\mapsto \frac{1}{(z-p)^d} + \dots
  $$
@@ -75,13 +75,36 @@ How can you tell one from another??
 $W(p) = \{0, g+1,g+2,\dots\}$.
 
 \column{.5\textwidth}
-But at finitely many \alert{Weierstrass points} $p$
-there is a different list $W(p)$ of pole orders.
+But at finitely many points $p$
+there is a different list $W(p)$ of pole orders. These are called \alert{Weierstrass points}.
 The Weierstrass points are landmarks that rigidify on $X$.
 \end{columns}
  \end{frame}
 
 
+\begin{frame}{The pole orders form a \alert{semigroup} in the whole numbers.}
+ 
+ A \alert{semigroup} (more precisely, ``reduced numerical semigroup'' is a subset 
+ containing 0 and all but finitely many positive integers and closed under addition. For
+ example 
+ $
+\{0,2, 4, 6, 7, 8,\dots\}.
+ $
+or 
+$
+ \{0,g+1,g+2,\dots\},
+ $
+(where the 3 dots represent ``all larger numbers''.
+\bigskip
+
+Since
+$$
+\frac{1}{(z-p)^d}\frac{1}{(z-p)^e} = \frac{1}{(z-p)^{d+e}}
+$$
+the list $W(p)$ is  a semigroup,
+called the \alert{Weierstrass semigroup} of $p$.
+
+\end{frame}
 \begin{frame}{The set of pole orders}
 A function on a Riemann surface with a pole of order $d$ at $x = 0\in X$ is locally of the form
 $
@@ -174,34 +197,25 @@ $h^0(\omega_X) = 16$ and $h^0(\omega_X\otimes \omega_X) = 45$; but $\#(G+G) = 46
 
 \begin{frame}{How to find a Weierstrass point}
 
-Here is an example of a general method:
-
-\begin{example}[Pinkham, 1974]
-Let $X$ be the plane curve with equation $x^3-(y^4 -u) = 0.$
+Here is a special case of a general method (Pinkham, 1974): For any complex number $u$, let
+$X_{u}$ be the plane curve with equation $y^3-(x^4 -u) = 0.$ 
+\vskip -.19in
 \begin{figure}
- 
+  \centering
+    \includegraphics[height=1in]{"3curves.pdf"}
 \end{figure} 
-
-When $u\neq 0$ varies, this defines a family of Riemann surfaces
-$X_u$ but as $u$ goes to 0 it becomes the singular curve 
-defined by the equation $x^3-y^4$, which has a cusp at 0. 
-
-\begin{figure}
- 
-\end{figure}
-It is parameterized
-by $x=t^4, y=t^3$. The line $x=0$ meets the curve with multiplicity 4, the line $y=0$ meets the curve with
-multiplicity 3.
-\medskip
-Now suppose $u\neq 0$, and let $a$ be a fourth root of $u$. 
-The point $p$ with $x=0, y= a$ is in $X_u$, and at this point the functions $1/y$ has a pole of order 3, while $1/x$ has
-a pole of order 4, so this is a Weierstrass point with the Weierstrass semigroup $W(p) = {3,4,6,7,8,\dots}.$
-\end{example}
+\vskip -.1in
+The figure shows the curves $X_0$, $X_{1}$ and the line $y-1 = 0$.
+The complex points of $X_1$ form a Riemann surface, but $X_{0}$ has a cusp singularity at 0 (not really visible in this real slice.)
+The Riemann surface $X_{1}$ has a Weierstrass point with 
+semigroup $\{3,4,6,7,8,\dots\}$ at $x=0, y=-1$. You can ``see'' the function with a pole of order 4: the line
+$y-1=0$ is 4-fold tangent to the curve $X_{1}$, so the function $1/(y-1)$ has a pole of order 4
+at the point $x=0, y=-1$.
 \end{frame}
 
 \begin{frame}{A general method}
 To prove that a semigroup $S$ does appear as a Weierstrass semigroup on some
-Riemann surface $X$, use a ``family'' of
+Riemann surface $X_{u}$, use a ``family'' of
 Riemann surfaces  ($=$ smooth projective algebraic curves) $X_u$ ``degenerating'' to a singular curve $X_0$.
  Given the semigroup $S$ you
 have to
@@ -223,7 +237,7 @@ have to
  \item Pinkham (1974): the singular curve is made from the semigroup; it is the set 
 of maximal ideals in $\C[\{t^a\}_{a\in S}]$. It has a complicated cusp singularity. 1) is easy, 2) is hard, 3) is easy.
 
-\item E-Harris (1976), Pflueger (2018), \dots with the method of ``limit linear series''; the singular curve is a reducible curve ``of compact type''. 1) is easy; 2) is easy; 3) is hard.
+\item Eisenbud-Harris (1976), Pflueger (2018), \dots with the method of ``limit linear series''; the singular curve is a reducible curve ``of compact type''. 1) is easy; 2) is easy; 3) is hard.
 \end{itemize}
 \end{frame}
 
@@ -232,7 +246,7 @@ of maximal ideals in $\C[\{t^a\}_{a\in S}]$. It has a complicated cusp singulari
 \item<1-> Assymptotic number of genus $g$ semigroups: $g^\Phi$, where $\Phi = \frac{1+\sqrt 5}{2}\sim 1.618$, the ``Golden ratio'' (Euclid, 300 BCE).
  \item<2-> Existence: 
 \begin{itemize}
-  \item<3-> E-Harris, Pflueger, \dots, limit series method: all genera, but restricted $S$ (``effective weight'' $\leq g-1$).
+  \item<3-> Eisenbud-Harris, Pflueger, \dots, limit series method: all genera, but restricted $S$ (``effective weight'' $\leq g-1$).
 \item<3-> E-Schreyer (2024), a variation of Pinkham's method (plus clever computation): all semigroups with $g\leq 10$. Maybe the same methods will decide the question up to $g =15$\dots .
 \end{itemize}
 \item<4-> Non-existence: Buchweitz's method gives sporadic examples in genus $g \geq 16$.
