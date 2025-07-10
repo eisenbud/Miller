@@ -1,0 +1,101 @@
+
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+\usepackage{diagrams}
+%SetFonts
+
+%SetFonts
+\usepackage{graphicx}
+\usepackage{eps-to-pdf}
+\usepackage{hyperref}
+\usepackage{showkeys} %This shows the labels.
+\usepackage{pdfpages}
+%\usepackage{draftwatermark}
+
+
+\title{Miller Professorship application.}
+\author{David Eisenbud}
+\date{\today}							% Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\section*{Introduction}
+%\subsection{}
+
+I am applying for a Miller Professorship to focus on a specific area of mathematical research, after serving as Director of the Mathematical Sciences Research Institute (MSRI) for most of the years 1997-2022. There I accomplished my major goals, extending and  improving the physical facility and raising a substantial endowment. Now that I am able to expand my research again, I have discovered a realm of novel phenomena in an area of mathematics that has been studied from a different point of view for 70 years. I can guess far more about the phenomena than I can presently establish, and I want a period in which I can pursue research in this area with the rigor and intensity that it deserves. 
+
+In addition to the freedom to devote time to pure research, I would look forward to the connections with other faculty and postdocs provided by the lunches and other social occasions of the  Miller program. I have had 36 successful PhD students so far, and my connections with them---in many cases still ongoing---are among the most satisfying aspects of my career. At MSRI I organized structured and much appreciated mentoring arrangements for the more than 30 postdoctoral fellows who spend time at MSRI each year. The opportunity to take part in the Miller arrangements for postdocs would be most welcome.
+
+Here is some background on my project: my fundamental area of study is algebraic geometry, the qualitative study of geometric forms defined by polynomial equations. Familiar examples are the curves in the plane that we call circle, ellipse, parabola, and hyperbola – they are called the “conic sections” because they can
+all be constructed by slicing a circular cone. These are part of one family algebraically, too: they are defined by equations involving only linear and quadratic terms. They were intensely studied by mathematicians from the time of Euclid until the first third of the 19th century. Nowadays algebraic geometry is concerned with a far wider class of objects, often embedded in high-dimensional spaces, and this has led to wide field of applications ranging from differential geometry and mathematical physics to artificial vision and robotic motion planning. 
+
+Underpinning much work of this kind is the need to understand solutions of systems of linear equations of a certain kind. High-school students typically learn to solve two linear equations in two unknowns, say ax+by = c and dx+ey = f (surprisingly, what they learn is more sophisticated than what was known to mathematicians before  1700!) The modern theory useful in algebraic geometry requires the solution of such systems of equations when the coefficients a,b,c,d,e,f are themselves varying (perhaps as polynomials in further variables) and the solutions to be found are also systems of polynomials. 
+
+Such systems of equations were first seriously studied by David Hilbert, the greatest mathematician of his day, around 1890, and became the center of a great deal of research starting in the 1950s. From the 1960s on, people began to understand the need to study situations where the coefficients and the solutions come from even more exotic domains, rings of functions on other algebraic varieties. In this context the complete resolution of one system of equations leads inevitably to an infinite sequence of further equations and solutions, called in total an infinite free resolution. 
+
+It is in the context of these infinite free resolutions that my new observations, conjectures, and theorems fall. Over the last 70 years, most of the work done in this area (and there has been a lot) has focused only on the numbers of independent solutions of each successive system of equations. Modern computational algebra and fast computers allow one to look much more deeply at the successive systems. Using that power, my collaborators and I have seen many unexpected phenomena. In some cases, we have already been able to prove that what we are observing are general phenomena; but our observations greatly outstrip our current proofs.
+This is the area on which I would like to focus during a year as Miller Professor.
+
+
+\smallbreak
+\noindent{\bf Technical description}
+\smallbreak
+I will use some technical terms that are common in the field to describe the work; I would be happy to explain them if the committee would like.
+
+The coefficients and solutions to the linear equations of which I spoke in the previous paragraphs are taken from a commutative Noetherian ring $R$ (although the noncommutative case, particularly that of group algebras in finite characteristic, is also very interesting and open). The system of equations is usually presented as a homomorphism between finitely generated free $R$-modules $\phi_{1}: F_{1}\to F_{0}$ (in applications generally a presentation matrix for a module or ideal of interest). A \emph{free resolution} is then
+a sequence of maps of free modules
+$$
+\cdots\rTo F_{i}\rTo^{\phi_{i}} F_{i-1} \rTo \cdots \rTo F_{2} \rTo^{\phi_{2}} F_{1}\rTo^{\phi_{1}} F_{0}
+$$
+such that $\phi_{i+1}$ has image exactly the kernel of $\phi_{i}$ for each $i$. 
+
+If we write $\phi_{i}$
+as a matrix representing a system of homogeneous linear equations then the columns of $\phi_{i+1}$ generate the solutions of the equations $\phi_{i}$. In the circumstances of most interest (local or positively graded $R$)
+there is a good notion of a minimal set of generators, and if the columns of each $\phi_{i+1}$ 
+are minimal generators of the solutions to the equations $\phi_{i}$, then the whole resolution is 
+uniquely determined by $\phi_{1}$, and represents the complete solution of these equations. We
+will assume from now on that we have this minimality and uniqueness. It is a theorem of David Hilbert that
+the modules $F_{i}$ are then all finitely generated.
+
+If for $i$ sufficiently large the $F_{i}$ vanish, the result is called a \emph{finite free resolution}, and in this case, on which I have published many papers, much of the work done concerns the nature of the maps $\phi_{i}$
+and various kinds of equations that connect the entries of the matrices that appear there. For example, if
+$R = k[x_{1}, \dots, x_{n}]$, where $k$ is a field such as the real or complex numbers, the $F_{i}$ must vanish
+for $i>n$, independent of $\phi_{1}$ -- also a result of David Hilbert. In one of my earliest papers on the subject (joint with David Buchsbaum), I gave a new explanation for this, showing that the ideals in $R$ generated by the entries of $\phi_{i}$ must grow, by a certain measure, with $i$, and for $i>n$ there are no ideals as large as would be required.
+
+In the infinite case the measure of the size of ideals (the \emph{depth}, or \emph{grade})
+which is fundamental in the finite case, is unavailable in typical situations, and no such result is known. Instead, most of the past work  concerns the rate of growth of the number of generators of $F_{i}$ as $i$ increases. 
+ 
+{\bf Modern computational methods allow a new approach.} These methods are based on the technique of Gr\"obner bases, and coded in the computer algebra system \emph{Macaulay2},  of which I am a developer. With them I can look in detail at the matrices in the resolutions, and it seems that there are rich and unexpected phenomena, waiting to be established.
+
+As a Miller Professor I
+would intensely investigate the following three closely related phenomena that I have observed in extensive computations and proven abstractly in certain ranges. Each of them points toward the presence of still
+undiscovered structures:
+
+\smallbreak
+\noindent{\bf Conjecture 1: Let $F$ be a free resolution as above, and let $J_{i}$ be the ideal generated
+by entries of a matrix representing $\phi_{i}$. When $i$ is sufficiently large, $J_{i+2} = J_{i}$.}
+\smallbreak
+
+Partly through work of mine with Hai Long Dao, this conjecture has been verified in two broad classes of examples, but our observations suggest still wider applicability.
+
+\smallbreak
+\noindent{\bf Conjecture 2: Let $R$ be an Artinian local ring of embedding dimension $d$ with residue field $k$ and let $F$ be the minimal free resolution of $k$. Let $S$ be the set of positive integers such that
+$k$ appears as a direct summand of the image of $\phi_{i}$. Then $S$ consists of
+all integers $\geq$ some integer $S_{0}$ \emph{possibly excepting} $d+1$.}
+\smallbreak
+
+We have many examples showing that, if true, this conjecture is sharp: all these patterns appear, and we have proven the conjecture for two important classes of rings $R$.
+
+\smallbreak
+\noindent{\bf Problem 3: Let $R$ be a Noetherian local ring with residue field $k$. It was shown by John Tate and Tor Gulliksen that the
+minimal free resolution of $k$ has the structure of a free commutative differential graded algebra.
+The construction is much more general, but the case of the residue field is the \emph{only} one where it is
+known to be minimal. I recently found an unexpected family of examples. How far can this be extended?}
+
+\end{document}  
